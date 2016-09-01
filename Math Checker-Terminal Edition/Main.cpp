@@ -26,13 +26,13 @@ namespace quadratic {
 	{
 		goto M2;
 	M1:
-		cout << "You must input a value!" << endl;
+		cout << "you must input a value!" << endl;
 	M2:
-		cout << "Input a value for a:" << endl;
+		cout << "input a value for a:" << endl;
 		cin >> a;
-		cout << "Input a value for b:" << endl;
+		cout << "input a value for b:" << endl;
 		cin >> b;
-		cout << "Input a value fpr c:" << endl;
+		cout << "input a value fpr c:" << endl;
 		cin >> c;
 
 		if (a == NULL || b == NULL || c == NULL)
