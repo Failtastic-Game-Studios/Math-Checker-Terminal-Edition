@@ -42,8 +42,8 @@ namespace quadratic {
 
 		double A1 = (b*b) - 4 * a*c;
 		double A2 = sqrt(A1);
-		double B1 = ((-b) + A2) / 2 * a;
-		double B2 = ((-b) - A2) / 2 * a;
+		double B1 = ((-b) + A2) / (2 * a);
+		double B2 = ((-b) - A2) / (2 * a);
 
 		if (B1 == NULL || B2 == NULL)
 		{
