@@ -45,14 +45,14 @@ namespace quadratic {
 		double B1 = ((-b) + A2) / (2 * a);
 		double B2 = ((-b) - A2) / (2 * a);
 
-		if (B1 == NULL || B2 == NULL)
+		if (B1 != B1 || B2 != B2)
 		{
-			cout << "Invalid Input!" << endl;
-			system("PAUSE");
-			goto M1;
+			cout << "The result is an imaginary number." << endl;
+			goto M3;
 		}
 
 		cout << "x = " << B1 << ", " << B2 << endl;
+	M3:
 		system("PAUSE");
 	}
 }
