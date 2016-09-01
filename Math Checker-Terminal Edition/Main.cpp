@@ -14,7 +14,18 @@ int main()
 
 	if (n == 1)
 	{
-		quadratic::quadCalc();
+		double a;
+		double b;
+		double c;
+		double result1;
+		double result2;
+		cout << "Input a value for a:" << endl;
+		cin >> a;
+		cout << "Input a value for b:" << endl;
+		cin >> b;
+		cout << "Input a value fpr c:" << endl;
+		cin >> c;
+		result1, result2 = quadratic::quadCalc(a, b, c);
 	}
 
 	return 0;
@@ -22,22 +33,12 @@ int main()
 
 namespace quadratic {
 	using namespace std;
-	void quadCalc()
+	double quadCalc(double a, double b, double c)
 	{
-		goto M2;
-	M1:
-		cout << "You must input a value!" << endl;
-	M2:
-		cout << "Input a value for a:" << endl;
-		cin >> a;
-		cout << "Input a value for b:" << endl;
-		cin >> b;
-		cout << "Input a value fpr c:" << endl;
-		cin >> c;
 
 		if (a == NULL || b == NULL || c == NULL)
 		{
-			goto M1;
+			cout << "You must input a value!" << endl;
 		}
 
 		double A1 = (b*b) - 4 * a*c;
@@ -51,7 +52,7 @@ namespace quadratic {
 			goto M3;
 		}
 
-		cout << "x = " << B1 << ", " << B2 << endl;
+		return B1, B2;
 	M3:
 		system("PAUSE");
 	}
