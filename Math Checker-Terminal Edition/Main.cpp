@@ -50,6 +50,10 @@ namespace quadratic {
 			cout << "The result is an imaginary number." << endl;
 			goto M3;
 		}
+		else if (B1 == NULL || B2 == NULL)
+		{
+			goto M1;
+		}
 
 		cout << "x = " << B1 << ", " << B2 << endl;
 	M3:
