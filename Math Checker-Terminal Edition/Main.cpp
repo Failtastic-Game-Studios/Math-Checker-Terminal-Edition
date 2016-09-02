@@ -28,11 +28,11 @@ namespace quadratic {
 	M1:
 		cout << "You must input a value!" << endl;
 	M2:
-		cout << "Input a value for a:" << endl;
+		cout << "Input a value for a: ";
 		cin >> a;
-		cout << "Input a value for b:" << endl;
+		cout << "Input a value for b: ";
 		cin >> b;
-		cout << "Input a value fpr c:" << endl;
+		cout << "Input a value for c: ";
 		cin >> c;
 
 		if (a == NULL || b == NULL || c == NULL)
@@ -55,7 +55,14 @@ namespace quadratic {
 			goto M1;
 		}
 
-		cout << "x = " << B1 << ", " << B2 << endl;
+		if (B1 < B2)
+		{
+			cout << "x = " << B1 << ", " << B2 << endl;
+		}
+		else if (B2 < B1)
+		{
+			cout << "x = " << B2 << ", " << B1 << endl;
+		}
 	M3:
 		system("PAUSE");
 	}
