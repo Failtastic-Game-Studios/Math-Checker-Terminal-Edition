@@ -15,10 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Main.h">
+    <ClInclude Include="quadCalc.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="quadCalc.h">
+    <ClInclude Include="add.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
