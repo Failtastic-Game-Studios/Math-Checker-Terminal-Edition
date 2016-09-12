@@ -1,18 +1,20 @@
 #include <iostream>
 #include <string.h>
 #include <math.h>
+#include "Main1.h"
 #include "quadCalc.h"
 #include "arithmetic_functions.h"
 
 int main()
 {
 	using namespace std;
-	cout << "Choose your operation:" << endl;
+	cout << "Please choose your mathematical operation:" << endl;
 	cout << "1.Quadratic Solver" << endl;
 	cout << "2.Addition" << endl;
 	cout << "3.Subtraction" << endl;
 	cout << "4.Multiplication" << endl;
-	cout << "5. Division" << endl;
+	cout << "5.Division" << endl;
+	cout << "6.More"
 	int n;
 	cin >> n;
 
@@ -36,6 +38,10 @@ int main()
 	else if (n == 5)
 	{
 		division::divide;
+	}
+	else if (n == 6)
+	{
+		Main1::Main1();
 	}
 
 	return 0;
