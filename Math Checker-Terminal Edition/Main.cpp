@@ -1,16 +1,18 @@
 #include <iostream>
 #include <string.h>
-#include <sstream>
 #include <math.h>
 #include "quadCalc.h"
-#include "add.h"
+#include "arithmetic_functions.h"
 
 int main()
 {
 	using namespace std;
 	cout << "Choose your operation:" << endl;
 	cout << "1.Quadratic Solver" << endl;
-	cout << "2.Adding Machine" << endl;
+	cout << "2.Addition" << endl;
+	cout << "3.Subtraction" << endl;
+	cout << "4.Multiplication" << endl;
+	cout << "5. Division" << endl;
 	int n;
 	cin >> n;
 
@@ -21,6 +23,19 @@ int main()
 	else if (n == 2)
 	{
 		add::add();
+	}
+	else if (n == 3)
+	{
+		subtract::sub();
+	}
+	else if (n == 4)
+	{
+		multiply::multiply();
+	}
+	
+	else if (n == 5)
+	{
+		division::divide;
 	}
 
 	return 0;
@@ -88,6 +103,98 @@ namespace add {
 		{
 			a += b;
 			cout << "Input the next number to be added or / to add the given numbers: ";
+			cin >> b;
+			system("cls");
+		}
+		cout << "The final result is: " << a << endl;
+		system("PAUSE");
+	}
+}
+
+namespace subtract {
+	using namespace std;
+	void sub() 
+	{
+		system("cls");
+		cout << "Input a number: ";
+		cin >> a;
+		system("cls");
+		cout << "Input the next number to be subtracted from the first: ";
+		cin >> b;
+		system("cls");
+		while (cin)
+		{
+			a -= b;
+			cout << "Input the next number to be subtracted or / to add the given numbers: ";
+			cin >> b;
+			system("cls");
+		}
+		cout << "The final result is: " << a << endl;
+		system("PAUSE");
+	}
+}
+
+namespace multiply {
+	using namespace std;
+	void multiply() 
+	{
+		system("cls");
+		cout << "Input a number: ";
+		cin >> a;
+		system("cls");
+		cout << "Input the next number to be multiplied from the first: ";
+		cin >> b;
+		system("cls");
+		while (cin)
+		{
+			a *= b;
+			cout << "Input the next number to be multiplied or / to add the given numbers: ";
+			cin >> b;
+			system("cls");
+		}
+		cout << "The final result is: " << a << endl;
+		system("PAUSE");
+	}
+}
+
+namespace multiply {
+	using namespace std;
+	void multiply() 
+	{
+		system("cls");
+		cout << "Input a number: ";
+		cin >> a;
+		system("cls");
+		cout << "Input the next number to be multiplied from the first: ";
+		cin >> b;
+		system("cls");
+		while (cin)
+		{
+			a *= b;
+			cout << "Input the next number to be multiplied or / to add the given numbers: ";
+			cin >> b;
+			system("cls");
+		}
+		cout << "The final result is: " << a << endl;
+		system("PAUSE");
+	}
+}
+
+namespace division {
+	using namespace std;
+	void divide() 
+	{
+		system("cls");
+		cout << "Input a number: ";
+		cin >> a;
+		system("cls");
+		cout << "Input the next number to be divided from the first: ";
+		cin >> b;
+		system("cls");
+		while (cin)
+		{
+			a /= b;
+			cout << "Input the next number to be divided or / to add the given numbers: ";
 			cin >> b;
 			system("cls");
 		}
