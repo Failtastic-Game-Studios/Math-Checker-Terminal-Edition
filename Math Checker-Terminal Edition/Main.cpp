@@ -1,20 +1,26 @@
 #include <iostream>
 #include <string.h>
+#include <sstream>
 #include <math.h>
-#include "Main.h"
 #include "quadCalc.h"
+#include "add.h"
 
 int main()
 {
 	using namespace std;
 	cout << "Choose your operation:" << endl;
-	cout << "1.Quadratic solver" << endl;
+	cout << "1.Quadratic Solver" << endl;
+	cout << "2.Adding Machine" << endl;
 	int n;
 	cin >> n;
 
 	if (n == 1)
 	{
 		quadratic::quadCalc();
+	}
+	else if (n == 2)
+	{
+		add::add();
 	}
 
 	return 0;
@@ -64,6 +70,28 @@ namespace quadratic {
 			cout << "x = " << B2 << ", " << B1 << endl;
 		}
 	M3:
+		system("PAUSE");
+	}
+}
+
+namespace add {
+	using namespace std;
+	void add() 
+	{
+		cout << "Input a number: ";
+		cin >> a;
+		system("cls");
+		cout << "Input the next number to be added to the first: ";
+		cin >> b;
+		system("cls");
+		while (cin)
+		{
+			a += b;
+			cout << "Input the next number to be added or / to add the given numbers: ";
+			cin >> b;
+			system("cls");
+		}
+		cout << "The final result is: " << a << endl;
 		system("PAUSE");
 	}
 }

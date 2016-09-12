@@ -110,7 +110,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="Main.h" />
+    <ClInclude Include="add.h" />
     <ClInclude Include="quadCalc.h" />
   </ItemGroup>
   <ItemGroup>
