@@ -19,7 +19,11 @@ int main1()
 		simpleCalc::simpleCalculator();
 	}
 	
-	namespace simpleCalc {
+	
+	return 0;
+}
+
+namespace simpleCalc {
 		static void simpleCalculator()
 		{
 			string x;
@@ -33,5 +37,3 @@ int main1()
 			cout << "The result is: " << i << " please put any issues on the github page." << endl;
 		}
 	}
-	return 0;
-}
